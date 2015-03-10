@@ -14,8 +14,6 @@ body {
 }
 
 .main-container {
-	/*height: 300px;*/
-	width: 90%;
 	text-align: center;
 	margin: auto;
 	position: absolute;
@@ -25,8 +23,9 @@ body {
 	left: 0;
 }
 
+/*static header styling*/
+
 header {
-	font-family: 'Unica One', serif;
 	font-size: 50px;
 }
 
@@ -36,7 +35,12 @@ header {
 	margin: 2em 0 2em;
 }
 
-/*button styling*/
+/*special font*/
+header, .rules-list span, .cold-feedback, .hot-feedback  {
+	font-family: 'Unica One', serif;
+}
+
+/*universal button styling*/
 .button {
 	display: inline-block;
 	background-color: white;
@@ -52,6 +56,7 @@ header {
 	cursor: pointer;
 }
 
+/*start screen button styling*/
 .what-button, .start-button {
 	padding: 1em;
 	border: .2em solid black;
@@ -61,6 +66,7 @@ header {
 	margin-right: 1em;
 }
 
+/*how to play pop-up styling*/
 .what-box {
 	display: none;
 	width: 300px;
@@ -87,7 +93,6 @@ header {
 }
 
 .rules-list span {
-	font-family: 'Unica One', serif;
 	font-weight: bold;
 }
 
@@ -102,6 +107,7 @@ header {
 	border: 2px solid black;
 }
 
+/*game styling*/
 .game-container {
 	display: none;
 }
@@ -113,10 +119,21 @@ header {
 	margin: 0 auto
 }
 
+/*feedback styling*/
 .cold-feedback, .hot-feedback {
 	display: inline-block;
-	font-family: 'unica one', serif;
 	font-weight: bold;
+	position: absolute;
+	margin-top: 11px;
+}
+
+.hot-feedback {
+	margin-left: 49px;
+}
+
+.cold-feedback {
+	right: 0;
+	margin-right: 249px;
 }
 
 .cold-feedback p, .cold-feedback img, .hot-feedback p, .hot-feedback img {
@@ -132,19 +149,7 @@ header {
 	width: 1em;
 }
 
-.hot-feedback {
-	position: absolute;
-	margin-left: 49px;
-	margin-top: 11px;
-}
-
-.cold-feedback {
-	position: absolute;
-	right: 0;
-	margin-right: 249px;
-	margin-top: 11px;
-}
-
+/*guess form styling*/
 #userGuess {
 	margin: 0 auto;
 	padding: .1em;
@@ -159,6 +164,7 @@ header {
 	outline: none;
 }
 
+/*submit button styling overriding some universal button styling*/
 #guessButton {
 	display: block;
 	padding: .4em .3em .2em .3em;
@@ -169,22 +175,7 @@ header {
 	color: white;
 }
 
-.top-text, .start-over {
-	font-size: 1.3em;
-}
-
-.top-text {
-	margin-bottom: 2.5em;
-	font-style: italic;
-}
-
-.start-over {
-	margin-top: 3em;
-	display: block;
-	color: black;
-	text-decoration: underline;
-}
-
+/*styling for container holding user guesses*/
 .guess-container {
 	width: 377px;
 	margin: 2em auto;
@@ -200,4 +191,22 @@ header {
 	margin: .5em;
 	border: 2px solid black;
 	padding: 3px;
+}
+
+/*text styling for tagline and start-over link*/
+.top-text, .start-over {
+	font-size: 1.3em;
+}
+
+.top-text {
+	margin-bottom: 2.5em;
+	font-style: italic;
+}
+
+/*start over link styling*/
+.start-over {
+	margin-top: 3em;
+	display: block;
+	color: black;
+	text-decoration: underline;
 }
