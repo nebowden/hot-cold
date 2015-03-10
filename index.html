@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Hot or Cold</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Unica+One|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/> 
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	</head>
+	<body>
+
+		<section class="main-container">
+			<header>
+				
+				<!-- logo text -->
+				<h1>HOT or COLD</h1>
+
+			</header>
+
+			<img src="img/hot-cold-break2.jpg" class="break">
+
+
+			<div class="start-screen">
+				
+				<a class="what-button button" href="#">How to play</a>
+				<a class="start-button button" href="#">Start</a>
+				<div class="what-box">
+					<h2>&mdash;How to Play "Hot or Cold"&mdash;</h2>
+					<p>Can you see the future? Are you able to bend spoons with the power of your very own mind? Of course you can, so this is the game for you. The game selects a random number between 1 and 100&mdash;see how quickly you can guess it!
+					<ol class="rules-list">
+						<li>Click on the Start button on the home screen</li>
+						<li>Enter your guess in the # box and click submit.</li>
+						<li>You'll get feedback on your guess, from <span>frigid</span> if you are way off, to <span>scorching</span> if you're very close.</li>
+						<li>Use the feedback to hone in on the number.</li>
+						<li>All of your prior guesses will be shown so you can see what you've guessed already.</li>
+						<li>When you guess correctly, you'll see the message <span>correct!</span></li>
+						<li>Want to play a new game or start over? Just click "start over" at the bottom of the page.</li>
+						<li>Now go on and show off your mad guessing skills!</li>
+					</ol>
+					<a class="close-button button" href="#">close</a>
+				</div>
+				
+			</div>
+
+			<div class="game-container">
+				<p class="top-text">&mdash;Guess the number between 1 and 100!&mdash;</p>
+				<div class="game-play">
+
+					<div class="cold-feedback">
+					
+					</div>
+					  				
+	  				<div class="hot-feedback">
+						
+					</div>
+
+					<form>
+						<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="#"  required/>
+						<input type="submit" id="guessButton" class="button" name="submit" value="submit"/>
+					</form>
+					
+					<div class="guess-container">
+						<ul id="guessList" class="guessBox clearfix">
+				
+						</ul>
+					</div>
+
+				</div>
+				
+					<a class="start-over" href="#">start over</a>
+
+				</footer>
+			</div>
+			
+		</section>
+	</body>
+</html>
