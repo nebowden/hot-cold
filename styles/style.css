@@ -128,7 +128,8 @@ header, .rules-list span, .cold-feedback, .hot-feedback  {
 }
 
 .hot-feedback {
-	margin-left: 49px;
+	left: 0;
+	margin-left: 249px;
 }
 
 .cold-feedback {
